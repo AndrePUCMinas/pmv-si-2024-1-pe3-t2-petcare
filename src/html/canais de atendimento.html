@@ -12,8 +12,19 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="/src/css/menu_style.css" rel="stylesheet">
-    <title>PetCare</title>
+    <title>PetCare :: Canais de atendimento</title>
+    <style>
+    
+    /* Estilo personalizado para os cards */
+    .contact-card {
+      margin-bottom: 20px;
+      height: 100%;
+    }
+    
+      </style>
 </head>
+
+
 
 <body>
 
@@ -70,35 +81,48 @@
             <div class="col content">
 
                 <!-- Conteúdos das páginas -->
-
                 <header>
                     <img src="../../imagens/logo.jpeg" alt="Logo" id="logo">
                 </header>
-                <h1 id="titulo">Contato</h1>
-                <h2 id="subtitulo">Envie uma mensagem para a PetCare</h2>
-            
-                <div class="container">
-                    <form>
-                        <div class="mb-3">
-                            <div class="mb-3">
-                                <label id="labelNome" for="exampleFormControlInput1" class="form-label">Nome:</label>
-                                <input id="nome" type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Nome Completo">
+                <div class="container container-lg mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 80vh; margin-top: 5vh;">
+                    <div class="row justify-content-center w-100">
+                        <!-- Card 1: E-mail -->
+                        <div class="col-lg-4 d-flex">
+                            <a href="mailto:tiresuaduvida@email.com.br" class="card contact-card flex-fill d-flex flex-column text-decoration-none">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">E-mail</h5>
+                                    <p class="card-text">Tem alguma dúvida? Podemos te ajudar pelo nosso canal de email.</p>
+                                    <p class="card-text" style="color: #d96704;">tiresuaduvida@email.com.br</p>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <!-- Card 2: Telefone -->
+                        <div class="col-lg-4 d-flex">
+                            <div class="card contact-card flex-fill d-flex flex-column">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Telefone</h5>
+                                    <p class="card-text">Se quiser falar com a gente no telefone, é só ligar para:
+                                        xxxx xxxx (capitais e regiões metropolitanas)
+                                        xxxx xxx xxxx (demais localidades).</p>
+                                    
+                                </div>
                             </div>
-                            <label id="labelEmail" for="exampleFormControlInput1" class="form-label">Email:</label>
-                            <input id="email" type="email" class="form-control" id="exampleFormControlInput2"
-                                placeholder="nome@exemplo.com">
                         </div>
-                        <div class="mb-3">
-                            <label id="labelMensagem" for="exampleFormControlTextarea1" class="form-label">Digite aqui sua
-                                mensagem:</label>
-                            <textarea id="mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <br>
-                            <button id="submit" type="submit" class="btn btn-primary" onclick="enviarMensagem()">Enviar</button>
+                    
+                        <!-- Card 3: Chat -->
+                        <div class="col-lg-4 d-flex">
+                            <div class="card contact-card flex-fill d-flex flex-column">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Chat</h5>
+                                    <p class="card-text">Precisa de uma ajuda agora? Entre em contato com nosso atendimento através do chat.</p>
+                                    <a href="suporte.html" class="btn mt-auto" style="background-color: #d96704; color: white;">Iniciar Chat</a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                 </div>
-                </form>
-                </div>
+
     <div class="bottom-menu d-md-none">
         <a href="../src/html/products_example.html" class="bottom-menu-item" data-title="Produtos">
             <i class="material-icons">storefront</i>
