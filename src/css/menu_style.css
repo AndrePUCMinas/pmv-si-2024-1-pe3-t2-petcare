@@ -1,0 +1,283 @@
+@import url('/src/css/petcare_colors_style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --petcare-transition-width: width 0.3s ease;
+  --petcare-transition-bg-color: background-color 0.2s ease-in-out;
+  --petcare-transition-margin-left: margin-left 0.3s ease;
+  --petcare-shadow-1: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/******************/
+/** Desktop Menu **/
+/******************/
+
+.sidebar {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  padding: 0px;
+  transition: var(--petcare-transition-width);
+  overflow-y: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--petcare-shadow-1);
+  background-color: var(--petcare-color-beige);
+}
+
+.sidebar:hover {
+  width: 216px;
+}
+
+.sidebar:hover .sidebar-item-text {
+  display: inline-block;
+}
+
+.sidebar-item {
+  width: 100%;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--petcare-color-orange);
+  transition: var(--petcare-transition-bg-color);
+}
+
+.sidebar-item:last-child {
+  margin-top: auto;
+}
+
+.sidebar-item:hover {
+  color: var(--petcare-color-dark-brown);
+  background-color: var(--petcare-color-orange);
+}
+
+.sidebar-item:active {
+  width: 216px;
+  transition: var(--petcare-transition-bg-color);
+  color: var(--petcare-color-white);
+  background-color: var(--petcare-color-dark-orange);
+}
+
+.sidebar-item.active {
+  color: var(--petcare-color-dark-gray);
+  background-color: var(--petcare-color-yellow);
+}
+
+.sidebar-item-text {
+  display: none;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.content {
+  margin-left: 80px;
+  transition: var(--petcare-transition-margin-left);
+}
+
+.tablet-sidebar {
+  display: none;
+}
+
+/******************/
+/** Tabblet Menu **/
+/******************/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+
+  .tablet-sidebar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    padding: 0px;
+    transition: var(--petcare-transition-width);
+    overflow-y: auto;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--petcare-shadow-1);
+    background-color: var(--petcare-color-beige);
+  }
+
+  .tablet-sidebar-item {
+    width: 100%;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    transition: var(--petcare-transition-bg-color);
+    text-decoration: none;
+    color: var(--petcare-color-orange);
+  }
+
+  .tablet-sidebar-item:last-child {
+    margin-top: auto;
+  }
+
+  .tablet-sidebar-item:active {
+    color: var(--petcare-color-white);
+    background-color: var(--petcare-color-dark-orange);
+  }
+
+  .tablet-sidebar-item.active {
+    color: var(--petcare-color-dark-gray);
+    background-color: var(--petcare-color-yellow);
+  }
+
+  .content {
+    margin-left: 80px;
+    transition: var(--petcare-transition-margin-left);
+  }
+}
+
+/*****************/
+/** Mobile Menu **/
+/*****************/
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .tablet-sidebar {
+    display: none;
+  }
+
+  .bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--petcare-shadow-1);
+    background-color: var(--petcare-color-beige);
+  }
+
+  .bottom-menu-item {
+    display: block;
+    width: 16.6%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    color: var(--petcare-color-orange);
+  }
+
+  .bottom-menu-item:active {
+    color: var(--petcare-color-white);
+    background-color: var(--petcare-color-dark-orange);
+  }
+
+  .bottom-menu-item.active {
+    color: var(--petcare-color-dark-gray);
+    background-color: var(--petcare-color-yellow);
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  height: 100vh;
+  margin: 0;
+}
+
+#logo {
+  width: 200px;
+}
+
+#titulo {
+  padding-top: 0.2em;
+  margin-bottom: 0.8em;
+  text-align: center;
+  padding-top: 60px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+
+}
+
+#subtitulo {
+  color: var(--petcare-color-dark-gray);
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  background-color: var(--petcare-color-white);
+  border-radius: 10px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--petcare-color-dark-gray);
+  font-weight: 600;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--petcare-color-orange);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+  outline: none;
+}
+
+#submit {
+  background-color: var(--petcare-color-orange);
+  border-color: var(--petcare-color-orange);
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  float: right;
+}
+
+#submit:hover {
+  background-color: var(--petcare-color-dark-brown);
+  border-color: var(--petcare-color-dark-brown);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+      width: 70%;
+  }
+}
