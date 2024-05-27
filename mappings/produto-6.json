@@ -1,0 +1,19 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "GET",
+        "urlPattern": "/petcare/6"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": 6,
+            "name": "Ração Extrusada Megazoo para Tartarugas",
+            "price": 132.55,
+            "imageUrl": "https://www.petlove.com.br/images/products/225282/hd_no_extent/2511453.jpg?1627722448"
+        }
+    }
+}

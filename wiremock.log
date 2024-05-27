@@ -1,0 +1,402 @@
+2024-05-27 16:18:43.048 Verbose logging enabled
+2024-05-27 16:18:44.263 Verbose logging enabled
+
+[34m??     ?? ?? ??????  ??????? [33m???    ???  ??????   ?????? ??   ?? 
+[34m??     ?? ?? ??   ?? ??      [33m????  ???? ??    ?? ??      ??  ??  
+[34m??  ?  ?? ?? ??????  ?????   [33m?? ???? ?? ??    ?? ??      ?????   
+[34m?? ??? ?? ?? ??   ?? ??      [33m??  ??  ?? ??    ?? ??      ??  ??  
+[34m ??? ???  ?? ??   ?? ??????? [33m??      ??  ??????   ?????? ??   ?? 
+
+[0m----------------------------------------------------------------
+|               Cloud: https://wiremock.io/cloud               |
+|                                                              |
+|               Slack: https://slack.wiremock.org              |
+----------------------------------------------------------------
+
+version:                      3.5.4
+port:                         8087
+enable-browser-proxying:      false
+disable-banner:               false
+no-request-journal:           false
+verbose:                      true
+
+extensions:                   response-template,webhook
+2024-05-27 16:18:48.088 Request received:
+[0:0:0:0:0:0:0:1] - GET /petcare/produtos
+
+Host: [localhost:8087]
+Connection: [keep-alive]
+Cache-Control: [max-age=0]
+sec-ch-ua: ["Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"]
+sec-ch-ua-mobile: [?0]
+sec-ch-ua-platform: ["Windows"]
+Upgrade-Insecure-Requests: [1]
+User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36]
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Mode: [navigate]
+Sec-Fetch-User: [?1]
+Sec-Fetch-Dest: [document]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Accept-Language: [en-US,en;q=0.9,pt;q=0.8]
+Cookie: [g_state={"i_l":0}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "jsonBody" : [ {
+    "id" : 1,
+    "name" : "Ração Premier Golden Formula Cães Adultos Frango e Arroz Mini Bits",
+    "price" : 150.21,
+    "imageUrl" : "https://www.petlove.com.br/images/products/265990/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_C%C3%A3es_Adultos_Frango_e_Arroz_Mini_Bits_-_15_Kg_31021721-3_1.jpg?1674059936",
+    "category" : "cachorro"
+  }, {
+    "id" : 2,
+    "name" : "Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos de Raças Pequenas",
+    "price" : 128.72,
+    "imageUrl" : "https://www.petlove.com.br/images/products/267815/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_Nutrilus_Pro__Frango___Carne_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_!.jpg?1681215307",
+    "category" : "cachorro"
+  }, {
+    "id" : 3,
+    "name" : "Ração Royal Canin Premium Cat para Gatos Adultos Castrados",
+    "price" : 629.91,
+    "imageUrl" : "https://www.petlove.com.br/images/products/177801/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-para-Gatos-Adultos-Castrados.jpg?1627584785",
+    "category" : "gato"
+  }, {
+    "id" : 4,
+    "name" : "Ração Royal Canin Premium Cat Vitalidade para Gatos Adultos",
+    "price" : 67.41,
+    "imageUrl" : "https://www.petlove.com.br/images/products/177805/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-Vitalidade-para-Gatos-Adultos.jpg?1627584805",
+    "category" : "gato"
+  }, {
+    "id" : 5,
+    "name" : "Ração Megazoo Mix para Calopsitas",
+    "price" : 33.29,
+    "imageUrl" : "https://www.petlove.com.br/images/products/188839/hd_no_extent/Megazoo_Mix_Calopsita_350g_3101906.jpg?1627610695",
+    "category" : "ave"
+  }, {
+    "id" : 6,
+    "name" : "Ração Extrusada Megazoo para Tartarugas",
+    "price" : 132.55,
+    "imageUrl" : "https://www.petlove.com.br/images/products/225282/hd_no_extent/2511453.jpg?1627722448",
+    "category" : "reptil"
+  }, {
+    "id" : 7,
+    "name" : "Ração Tetra Min Flakes em Flocos",
+    "price" : 178.90,
+    "imageUrl" : "https://www.petlove.com.br/images/products/162940/hd_no_extent/TetraMin-200g_1L_2.jpg?1627549693",
+    "category" : "peixe"
+  }, {
+    "id" : 8,
+    "name" : "Comedouro e Bebedouro Duplo em Inox com Suporte",
+    "price" : 49.90,
+    "imageUrl" : "https://www.petlove.com.br/images/products/187462/hd_no_extent/31010152.jpg?1627607228",
+    "category" : "geral"
+  } ],
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [470206ac-5c6f-46dc-bec5-13bf370f2c3b]
+
+2024-05-27 16:18:51.178 Request received:
+[0:0:0:0:0:0:0:1] - GET /petcare/produtos
+
+Host: [localhost:8087]
+Connection: [keep-alive]
+Cache-Control: [max-age=0]
+sec-ch-ua: ["Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"]
+sec-ch-ua-mobile: [?0]
+sec-ch-ua-platform: ["Windows"]
+Upgrade-Insecure-Requests: [1]
+User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36]
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Mode: [navigate]
+Sec-Fetch-User: [?1]
+Sec-Fetch-Dest: [document]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Accept-Language: [en-US,en;q=0.9,pt;q=0.8]
+Cookie: [g_state={"i_l":0}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "jsonBody" : [ {
+    "id" : 1,
+    "name" : "Ração Premier Golden Formula Cães Adultos Frango e Arroz Mini Bits",
+    "price" : 150.21,
+    "imageUrl" : "https://www.petlove.com.br/images/products/265990/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_C%C3%A3es_Adultos_Frango_e_Arroz_Mini_Bits_-_15_Kg_31021721-3_1.jpg?1674059936",
+    "category" : "cachorro"
+  }, {
+    "id" : 2,
+    "name" : "Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos de Raças Pequenas",
+    "price" : 128.72,
+    "imageUrl" : "https://www.petlove.com.br/images/products/267815/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_Nutrilus_Pro__Frango___Carne_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_!.jpg?1681215307",
+    "category" : "cachorro"
+  }, {
+    "id" : 3,
+    "name" : "Ração Royal Canin Premium Cat para Gatos Adultos Castrados",
+    "price" : 629.91,
+    "imageUrl" : "https://www.petlove.com.br/images/products/177801/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-para-Gatos-Adultos-Castrados.jpg?1627584785",
+    "category" : "gato"
+  }, {
+    "id" : 4,
+    "name" : "Ração Royal Canin Premium Cat Vitalidade para Gatos Adultos",
+    "price" : 67.41,
+    "imageUrl" : "https://www.petlove.com.br/images/products/177805/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-Vitalidade-para-Gatos-Adultos.jpg?1627584805",
+    "category" : "gato"
+  }, {
+    "id" : 5,
+    "name" : "Ração Megazoo Mix para Calopsitas",
+    "price" : 33.29,
+    "imageUrl" : "https://www.petlove.com.br/images/products/188839/hd_no_extent/Megazoo_Mix_Calopsita_350g_3101906.jpg?1627610695",
+    "category" : "ave"
+  }, {
+    "id" : 6,
+    "name" : "Ração Extrusada Megazoo para Tartarugas",
+    "price" : 132.55,
+    "imageUrl" : "https://www.petlove.com.br/images/products/225282/hd_no_extent/2511453.jpg?1627722448",
+    "category" : "reptil"
+  }, {
+    "id" : 7,
+    "name" : "Ração Tetra Min Flakes em Flocos",
+    "price" : 178.90,
+    "imageUrl" : "https://www.petlove.com.br/images/products/162940/hd_no_extent/TetraMin-200g_1L_2.jpg?1627549693",
+    "category" : "peixe"
+  }, {
+    "id" : 8,
+    "name" : "Comedouro e Bebedouro Duplo em Inox com Suporte",
+    "price" : 49.90,
+    "imageUrl" : "https://www.petlove.com.br/images/products/187462/hd_no_extent/31010152.jpg?1627607228",
+    "category" : "geral"
+  } ],
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [470206ac-5c6f-46dc-bec5-13bf370f2c3b]
+
+2024-05-27 16:18:58.300 Request received:
+[0:0:0:0:0:0:0:1] - GET /petcare/1
+
+Host: [localhost:8087]
+Connection: [keep-alive]
+sec-ch-ua: ["Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"]
+sec-ch-ua-mobile: [?0]
+sec-ch-ua-platform: ["Windows"]
+Upgrade-Insecure-Requests: [1]
+User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36]
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Mode: [navigate]
+Sec-Fetch-User: [?1]
+Sec-Fetch-Dest: [document]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Accept-Language: [en-US,en;q=0.9,pt;q=0.8]
+Cookie: [g_state={"i_l":0}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "jsonBody" : {
+    "id" : 1,
+    "name" : "Ração Premier Golden Formula Cães Adultos Frango e Arroz Mini Bits",
+    "price" : 150.21,
+    "imageUrl" : "https://www.petlove.com.br/images/products/265990/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_C%C3%A3es_Adultos_Frango_e_Arroz_Mini_Bits_-_15_Kg_31021721-3_1.jpg?1674059936"
+  },
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [fee6cdd7-ce98-462e-bba3-ffaa4109c4d3]
+
+2024-05-27 16:19:02.795 Request received:
+[0:0:0:0:0:0:0:1] - GET /petcare/2
+
+Host: [localhost:8087]
+Connection: [keep-alive]
+sec-ch-ua: ["Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"]
+sec-ch-ua-mobile: [?0]
+sec-ch-ua-platform: ["Windows"]
+Upgrade-Insecure-Requests: [1]
+User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36]
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Mode: [navigate]
+Sec-Fetch-User: [?1]
+Sec-Fetch-Dest: [document]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Accept-Language: [en-US,en;q=0.9,pt;q=0.8]
+Cookie: [g_state={"i_l":0}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "jsonBody" : {
+    "id" : 2,
+    "name" : "Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos de Raças Pequenas",
+    "price" : 128.72,
+    "imageUrl" : "https://www.petlove.com.br/images/products/267815/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_Nutrilus_Pro__Frango___Carne_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_!.jpg?1681215307"
+  },
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [a4bd81e8-1a39-4603-91f3-fa0ad2afb182]
+
+2024-05-27 16:19:09.610 Request received:
+[0:0:0:0:0:0:0:1] - GET /petcare/8
+
+Host: [localhost:8087]
+Connection: [keep-alive]
+sec-ch-ua: ["Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"]
+sec-ch-ua-mobile: [?0]
+sec-ch-ua-platform: ["Windows"]
+Upgrade-Insecure-Requests: [1]
+User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36]
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Mode: [navigate]
+Sec-Fetch-User: [?1]
+Sec-Fetch-Dest: [document]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Accept-Language: [en-US,en;q=0.9,pt;q=0.8]
+Cookie: [g_state={"i_l":0}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "jsonBody" : {
+    "id" : 8,
+    "name" : "Comedouro e Bebedouro Duplo em Inox com Suporte",
+    "price" : 49.90,
+    "imageUrl" : "https://www.petlove.com.br/images/products/187462/hd_no_extent/31010152.jpg?1627607228"
+  },
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [edbd8f10-5ca3-4719-9e79-6de4cd97c537]
+
+2024-05-27 16:19:15.651 Request received:
+[0:0:0:0:0:0:0:1] - GET /petcare/produtos
+
+Host: [localhost:8087]
+Connection: [keep-alive]
+sec-ch-ua: ["Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"]
+sec-ch-ua-mobile: [?0]
+sec-ch-ua-platform: ["Windows"]
+Upgrade-Insecure-Requests: [1]
+User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36]
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Mode: [navigate]
+Sec-Fetch-User: [?1]
+Sec-Fetch-Dest: [document]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Accept-Language: [en-US,en;q=0.9,pt;q=0.8]
+Cookie: [g_state={"i_l":0}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "jsonBody" : [ {
+    "id" : 1,
+    "name" : "Ração Premier Golden Formula Cães Adultos Frango e Arroz Mini Bits",
+    "price" : 150.21,
+    "imageUrl" : "https://www.petlove.com.br/images/products/265990/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_C%C3%A3es_Adultos_Frango_e_Arroz_Mini_Bits_-_15_Kg_31021721-3_1.jpg?1674059936",
+    "category" : "cachorro"
+  }, {
+    "id" : 2,
+    "name" : "Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos de Raças Pequenas",
+    "price" : 128.72,
+    "imageUrl" : "https://www.petlove.com.br/images/products/267815/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_Nutrilus_Pro__Frango___Carne_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_!.jpg?1681215307",
+    "category" : "cachorro"
+  }, {
+    "id" : 3,
+    "name" : "Ração Royal Canin Premium Cat para Gatos Adultos Castrados",
+    "price" : 629.91,
+    "imageUrl" : "https://www.petlove.com.br/images/products/177801/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-para-Gatos-Adultos-Castrados.jpg?1627584785",
+    "category" : "gato"
+  }, {
+    "id" : 4,
+    "name" : "Ração Royal Canin Premium Cat Vitalidade para Gatos Adultos",
+    "price" : 67.41,
+    "imageUrl" : "https://www.petlove.com.br/images/products/177805/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-Vitalidade-para-Gatos-Adultos.jpg?1627584805",
+    "category" : "gato"
+  }, {
+    "id" : 5,
+    "name" : "Ração Megazoo Mix para Calopsitas",
+    "price" : 33.29,
+    "imageUrl" : "https://www.petlove.com.br/images/products/188839/hd_no_extent/Megazoo_Mix_Calopsita_350g_3101906.jpg?1627610695",
+    "category" : "ave"
+  }, {
+    "id" : 6,
+    "name" : "Ração Extrusada Megazoo para Tartarugas",
+    "price" : 132.55,
+    "imageUrl" : "https://www.petlove.com.br/images/products/225282/hd_no_extent/2511453.jpg?1627722448",
+    "category" : "reptil"
+  }, {
+    "id" : 7,
+    "name" : "Ração Tetra Min Flakes em Flocos",
+    "price" : 178.90,
+    "imageUrl" : "https://www.petlove.com.br/images/products/162940/hd_no_extent/TetraMin-200g_1L_2.jpg?1627549693",
+    "category" : "peixe"
+  }, {
+    "id" : 8,
+    "name" : "Comedouro e Bebedouro Duplo em Inox com Suporte",
+    "price" : 49.90,
+    "imageUrl" : "https://www.petlove.com.br/images/products/187462/hd_no_extent/31010152.jpg?1627607228",
+    "category" : "geral"
+  } ],
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [470206ac-5c6f-46dc-bec5-13bf370f2c3b]
+
+2024-05-27 16:19:26.739 Admin request received:
+127.0.0.1 - POST /shutdown
+
+Host: [localhost:8087]
+User-Agent: [curl/7.78.0]
+Accept: [*/*]
+
+

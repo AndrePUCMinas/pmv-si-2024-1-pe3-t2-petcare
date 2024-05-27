@@ -1,0 +1,19 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "GET",
+        "urlPattern": "/petcare/4"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": 4,
+            "name": "Ração Royal Canin Premium Cat Vitalidade para Gatos Adultos",
+            "price": 67.41,
+            "imageUrl": "https://www.petlove.com.br/images/products/177805/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-Vitalidade-para-Gatos-Adultos.jpg?1627584805"
+        }
+    }
+}

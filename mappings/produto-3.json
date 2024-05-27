@@ -1,0 +1,19 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "GET",
+        "urlPattern": "/petcare/3"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": 3,
+            "name": "Ração Royal Canin Premium Cat para Gatos Adultos Castrados",
+            "price": 629.91,
+            "imageUrl": "https://www.petlove.com.br/images/products/177801/hd_no_extent/Ra%C3%A7%C3%A3o-Royal-Canin-Premium-Cat-para-Gatos-Adultos-Castrados.jpg?1627584785"
+        }
+    }
+}

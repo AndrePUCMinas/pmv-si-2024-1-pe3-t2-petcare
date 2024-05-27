@@ -1,0 +1,19 @@
+{
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPattern": "/petcare/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": 1,
+      "name": "Ração Premier Golden Formula Cães Adultos Frango e Arroz Mini Bits",
+      "price": 150.21,
+      "imageUrl": "https://www.petlove.com.br/images/products/265990/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_C%C3%A3es_Adultos_Frango_e_Arroz_Mini_Bits_-_15_Kg_31021721-3_1.jpg?1674059936"
+    }
+  }
+}

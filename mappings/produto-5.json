@@ -1,0 +1,19 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "GET",
+        "urlPattern": "/petcare/5"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": 5,
+            "name": "Ração Megazoo Mix para Calopsitas",
+            "price": 33.29,
+            "imageUrl": "https://www.petlove.com.br/images/products/188839/hd_no_extent/Megazoo_Mix_Calopsita_350g_3101906.jpg?1627610695"
+        }
+    }
+}

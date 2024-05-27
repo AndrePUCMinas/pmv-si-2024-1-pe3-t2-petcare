@@ -1,0 +1,19 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "GET",
+        "urlPattern": "/petcare/8"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": 8,
+            "name": "Comedouro e Bebedouro Duplo em Inox com Suporte",
+            "price": 49.90,
+            "imageUrl": "https://www.petlove.com.br/images/products/187462/hd_no_extent/31010152.jpg?1627607228"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPattern": "/petcare/2"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": 2,
+      "name": "Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos de Raças Pequenas",
+      "price": 128.72,
+      "imageUrl": "https://www.petlove.com.br/images/products/267815/hd_no_extent/Ra%C3%A7%C3%A3o_Seca_Nutrilus_Pro__Frango___Carne_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_!.jpg?1681215307"
+    }
+  }
+}

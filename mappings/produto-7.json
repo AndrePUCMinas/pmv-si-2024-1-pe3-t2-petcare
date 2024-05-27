@@ -1,0 +1,19 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "GET",
+        "urlPattern": "/petcare/7"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": 7,
+            "name": "Ração Tetra Min Flakes em Flocos",
+            "price": 178.90,
+            "imageUrl": "https://www.petlove.com.br/images/products/162940/hd_no_extent/TetraMin-200g_1L_2.jpg?1627549693"
+        }
+    }
+}
